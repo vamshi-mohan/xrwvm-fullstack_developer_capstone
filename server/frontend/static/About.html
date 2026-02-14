@@ -1,72 +1,143 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <title>About Us - Best Cars Dealership</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #1e293b;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar a.active {
+            border-bottom: 3px solid #0dcaf0;
+        }
+
+        .about-header {
+            background: linear-gradient(to right, #0d6efd, #0dcaf0);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+        }
+
+        .team-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            height: 100%;
+        }
+
+        .team-card img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-         <h1>About Us</h1>
-          Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about/" class="active">About Us</a>
+        <a href="/contact/">Contact Us</a>
     </div>
-    </div>
-    </div>
-    
-</div>
 
+    <!-- About Header -->
+    <div class="about-header text-center">
+        <h1>About Us</h1>
+        <p class="lead">
+            Welcome to Best Cars Dealership, home to the best cars in North America.
+            We specialize in selling high-quality domestic and imported vehicles at competitive prices.
+        </p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="container about-section">
+        <div class="row g-4">
+
+            <!-- CEO -->
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                         alt="Michael Anderson">
+
+                    <h3>Michael Anderson</h3>
+                    <p class="text-muted">Founder & Chief Executive Officer</p>
+                    <p>
+                        With over 15 years of experience in the automotive industry,
+                        Michael has built Best Cars Dealership with a strong focus on
+                        trust, transparency, and customer satisfaction.
+                    </p>
+                    <p><strong>Email:</strong> michael.anderson@bestcars.com</p>
+                </div>
+            </div>
+
+            <!-- Sales Manager -->
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                         alt="Sophia Martinez">
+
+                    <h3>Sophia Martinez</h3>
+                    <p class="text-muted">Sales Manager</p>
+                    <p>
+                        Sophia leads our sales department and ensures every
+                        customer finds the perfect vehicle suited to their needs
+                        and budget.
+                    </p>
+                    <p><strong>Email:</strong> sophia.martinez@bestcars.com</p>
+                </div>
+            </div>
+
+            <!-- Service Head -->
+            <div class="col-md-4">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+                         alt="David Johnson">
+
+                    <h3>David Johnson</h3>
+                    <p class="text-muted">Head of Service Department</p>
+                    <p>
+                        David oversees vehicle inspections and after-sales
+                        services, ensuring every car meets our strict
+                        quality and safety standards.
+                    </p>
+                    <p><strong>Email:</strong> david.johnson@bestcars.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 bg-dark text-white">
+        © 2026 Best Cars Dealership | All Rights Reserved
+    </footer>
+
+</body>
 </html>
